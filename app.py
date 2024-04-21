@@ -36,13 +36,18 @@ pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
 index = pc.Index(os.getenv("PINECONE_INDEX_NAME"))
 
 col1, col2 = st.columns([1,3])
+
+col1.write("")
 col1.image(
             "assets/Marc_Louvion.png",
             # Manually Adjust the width of the image as per requirement
         )
 col2.header("⚡ MarcLouGPT")
 # col2.write("Bonjour, je suis MarcLouGPT, une IA entraînée sur la doc' de ShipFa.st & les derniers articles de ma Newsletter dédiée à mon quotidien d'IndieDev. Posez-moi vos questions, et je ferai de mon mieux pour y répondre en vous fournissant les liens de resources pertinentes pour approfondir le sujet.")
-col2.write("Hey there ! I'm MarcLouGPT, your go-to AI buddy trained on ShipFast docs and the latest insights from my IndieDev newsletter. Got a burning question? Fire away, and I'll do my best to give you answers while hooking you up with relevant resources to dive deeper into the topic ;) !")
+
+with col2:
+    col1, col2 = st.columns([1,100])
+    col2.write("Hey there ! I'm MarcLouGPT, your go-to AI buddy trained on ShipFast docs and the latest insights from my IndieDev newsletter. Got a burning question? Fire away, and I'll do my best to give you answers while hooking you up with relevant resources to dive deeper into the topic ;) !")
 
 st.caption("---")
 
