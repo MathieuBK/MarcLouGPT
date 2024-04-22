@@ -124,13 +124,17 @@ for message in st.session_state.history:
 
 # User input prompt
 # st.write("")
-user_prompt = st.text_input("",
+user_prompt = st.text_input(" ",
                             # ":orange[Écrivez votre message :]",
                             key="prompt",
                             placeholder="Write your message...",
                             on_change=generate_response,
                             
                             )
+
+# st.text_input(label, value="", max_chars=None, key=None, type="default", help=None, autocomplete=None, on_change=None, args=None, kwargs=None, *, placeholder=None, disabled=False, label_visibility="visible")
+# !!! ERROR IN LOGS : "2024-04-22 01:23:31.938 `label` got an empty value. This is discouraged for accessibility reasons and may be disallowed in the future by raising an exception. Please provide a non-empty label and hide it with label_visibility if needed." 
+# ==> #a -> add space in between brackets (i.e. " " instead of "") and label_visibility="collapsed" in st.text_input and all relevant fields
 
 # col1, col2 = st.columns([0.52, 0.5])
 # col2.caption(":gray[©️ 2024 Copyright [Mathieu Bekkaye](https://mathieubk-personalwebsite.streamlit.app) - All rights reserved.]")
