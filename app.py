@@ -49,7 +49,7 @@ with col2:
     col1, col2 = st.columns([1,100])
     col2.write("Hey there ! I'm MarcLouGPT, your go-to AI buddy trained on ShipFast docs and the latest insights from my IndieDev newsletter. Got a burning question? Fire away, and I'll do my best to give you answers while hooking you up with relevant resources to dive deeper into the topic ;) !")
 
-st.caption("---")
+# st.caption("---")
 
 
 # Define chat history storage
