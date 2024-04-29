@@ -139,7 +139,8 @@ user_prompt = st.text_input(" ",
 # col1, col2 = st.columns([0.52, 0.5])
 # col2.caption(":gray[©️ 2024 Copyright [Mathieu Bekkaye](https://mathieubk-personalwebsite.streamlit.app) - All rights reserved.]")
 
-st.markdown("<div style='text-align: right; color: #83858C; font-size:14px;'>&copy; 2024 Copyright <a href='https://mathieubk-personalwebsite.streamlit.app'>Mathieu Bekkaye</a> - All rights reserved.</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: right; color: #83858C; font-size:14px;'>&copy; 2024 Copyright <a href='https://www.linkedin.com/in/mathieubekkaye'>Mathieu Bekkaye</a> - All rights reserved.</div>", unsafe_allow_html=True)
+# st.markdown("<div style='text-align: right; color: #83858C; font-size:14px;'>&copy; 2024 Copyright <a href='https://mathieubk-personalwebsite.streamlit.app'>Mathieu Bekkaye</a> - All rights reserved.</div>", unsafe_allow_html=True)
 
 
 with open('./styles/style.css') as f:
